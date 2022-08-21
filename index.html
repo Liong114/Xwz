@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+p.dotted {border-style: dotted;}
+
+    </style>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>井字棋</title>
+    
+  </head>
+  <body>
+    <h1 style="text-align:center">井字棋游戏</h1>
+    <p class="dotted">
+      <a href="#bottom">开始游戏</a>
+      <br>
+      <br>
+      <p class="dotted"></p>
+      <h3>玩法介绍</h3>
+      <p>井字棋，英文名叫Tic-Tac-Toe，是一种在3*3格子上进行的连珠游戏，和五子棋类似，由于棋盘一般不画边框，格线排成井字故得名。游戏需要的工具仅为纸和笔，然后由分别代表O和X的两个游戏者轮流在格子里留下标记（一般来说先手者为X），任意三个标记形成一条直线，则为获胜。</p>
+      
+      <br>
+      <br>
+      <p>
+        先手走角，立于不败之地。有以下可能：</p>
+<p>后手走角：例如先手走左下角，后手走右上角，先手走任意角，后手堵两个角中间，先手再走另一角，胜。</p>
+<p>后手走右下角，先手走右上角，后手堵中间，先手走左上角，胜。</p>
+<p>后手走左上角，先手走右下角，胜。</p>
+<p>后手走边：例如先手走左下角，后手走下侧边，先手走中间，后手堵右上角，先手走左上角，胜。</p>
+<p>后手走右侧边，先手仍走中间，后手堵右上角，先手走右下角，胜。</p>
+<p>后手走上侧边，先手仍走中间，后手堵右上角，先手走左上角，胜。</p>
+<p>后手走左侧边，先手仍走中间，后手堵右上角，先手走右下角，胜。</p>
+<p>后手走中间：例如先手走左下角，后手走中间，先手走右上角，后手走任意边，平。</p>
+<p>后手走中间，先手走右上角，后手走任意角，先手占最后一个角，胜。
+<p></p>先手走角，立于不败之地；后手走角，更易平局。</p>
+<p>先手走中间：正常发挥，平。</p>
+<p>先手走边：正常发挥，平。</p>
+<p>但根据上面的先手走角，可以知道如果后手遇到先手走角的情况，走中间还是会平的，如下。</p>
+<p>先手走角：后手千万走中间，正常发挥，平。</p>
+<p>后手走其余位置，见上。</p>
+      
+      <h4>游戏攻略</h4>
+  <iframe src="https://www.bilibili.com/video/BV1A7411z7u3?spm_id_from=333.337.search-card.all.click" frameborder="0" height="600" width="750">
+</iframe>    
+    </p>
+ <br>
+     <br>
+    <br>
+    <p class="dotted">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <a id="bottom" href="#">回到介绍</a>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </p>
+  </body>
+</html>
